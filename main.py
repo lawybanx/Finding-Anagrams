@@ -4,7 +4,7 @@
 # find_anagrams("below", "elbow") --> True
 
 
-def check_anagram(word, anagram):
+def find_anagrams(word, anagram):
     word = word.lower()
     anagram = anagram.lower()
     if len(word) != len(anagram) or sorted(word) != sorted(anagram):
@@ -14,4 +14,4 @@ def check_anagram(word, anagram):
 
 input_word = input("Enter Word: ")
 input_anagram = input("Enter anagram: ")
-print(check_anagram(input_word, input_anagram))
+print(find_anagrams(input_word, input_anagram))
